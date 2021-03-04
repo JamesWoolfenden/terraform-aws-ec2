@@ -5,7 +5,9 @@ resource "aws_instance" "examplea" {
   root_block_device {
     encrypted = true
   }
+  metadata_options {
+    http_tokens = "required"
+  }
   user_data = var.user_data
   tags      = var.common_tags
 }
-
