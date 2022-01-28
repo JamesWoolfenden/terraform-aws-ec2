@@ -29,7 +29,7 @@ module "ec2" {
 
 This creates an S3 bucket with policy and applies the common tags scheme.
 The module uses a tagging scheme based on the map variable common_tags.
-This needs to consist of as a minimum (in your ***.auto.tfvars**):
+This needs to consist of as a minimum (in your **\*.auto.tfvars**):
 
 ```HCL
 common_tags = {
@@ -39,15 +39,16 @@ common_tags = {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| Name                                             | Version |
+| ------------------------------------------------ | ------- |
+| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
 
 ## Modules
 
@@ -55,22 +56,23 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [aws_instance.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) | resource |
-| [aws_ami.ubuntu](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami) | data source |
+| Name                                                                                                          | Type        |
+| ------------------------------------------------------------------------------------------------------------- | ----------- |
+| [aws_instance.examplea](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) | resource    |
+| [aws_ami.ubuntu](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami)          | data source |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is to help you add tags to your cloud objects | `map(any)` | n/a | yes |
-| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | n/a | `string` | `"t3.micro"` | no |
-| <a name="input_user_data"></a> [user\_data](#input\_user\_data) | n/a | `string` | `""` | no |
+| Name                                                                     | Description                                        | Type       | Default      | Required |
+| ------------------------------------------------------------------------ | -------------------------------------------------- | ---------- | ------------ | :------: |
+| <a name="input_common_tags"></a> [common_tags](#input_common_tags)       | This is to help you add tags to your cloud objects | `map(any)` | n/a          |   yes    |
+| <a name="input_instance_type"></a> [instance_type](#input_instance_type) | n/a                                                | `string`   | `"t3.micro"` |    no    |
+| <a name="input_user_data"></a> [user_data](#input_user_data)             | n/a                                                | `string`   | `""`         |    no    |
 
 ## Outputs
 
 No outputs.
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Instructions
@@ -95,7 +97,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright © 2019-2022 James Woolfenden
 
 ## License
 
