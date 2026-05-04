@@ -100,6 +100,7 @@ resource "aws_iam_policy" "terraform_pike" {
                 "ec2:DescribeInstanceCreditSpecifications",
                 "ec2:DescribeInstanceTypes",
                 "ec2:DescribeInstances",
+                "ec2:DescribeNetworkInterfaces",
                 "ec2:DescribeTags",
                 "ec2:DescribeVolumes",
                 "ec2:ModifyInstanceAttribute",
@@ -110,7 +111,9 @@ resource "aws_iam_policy" "terraform_pike" {
                 "ec2:TerminateInstances",
                 "ec2:UnmonitorInstances"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
